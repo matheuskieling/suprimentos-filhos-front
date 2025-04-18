@@ -14,13 +14,15 @@ import {JwtInterceptor} from "./auth/jwt.interceptor";
 import {HTTP_INTERCEPTORS, HttpClientModule} from "@angular/common/http";
 import {NoopAnimationsModule} from "@angular/platform-browser/animations";
 import {MatButtonModule} from "@angular/material/button";
+import { ProductComponent } from './components/product/product.component';
 
 @NgModule({
     declarations: [
         AppComponent,
         HomeComponent,
         LoginComponent,
-        RegisterComponent
+        RegisterComponent,
+        ProductComponent
     ],
     imports: [
         BrowserModule,

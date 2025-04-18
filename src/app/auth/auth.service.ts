@@ -26,12 +26,21 @@ export class AuthService {
         localStorage.setItem('token', token);
     }
 
+    saveUserId(userId: string): void {
+        localStorage.setItem('userId', userId);
+    }
+
     getToken() {
         return localStorage.getItem('token');
     }
 
+    getUserId() {
+        return localStorage.getItem('userId');
+    }
+
     logout() {
         localStorage.removeItem('token');
+        localStorage.removeItem('userId');
     }
 }
 

@@ -40,6 +40,7 @@ export class LoginComponent {
         this.authService.login(credentials).subscribe({
             next: (res: TokenResponse) => {
                 this.authService.saveToken(res.token);
+                this.authService.saveUserId(res.userId);
                 this.router.navigate(['/']);
             },
             error: _ => {

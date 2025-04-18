@@ -1,0 +1,13 @@
+<div class="product-container">
+<!--  <img [src]="product.imgPath" [alt]="product.name" class="product-image">-->
+  <div class="image-container">
+    <div class="fake-image"></div>
+  </div>
+  <div class="product-details">
+    <div class="product-name">{{ product.name }}</div>
+    <div class="product-endDate">Acabar no dia: {{product.endsIn | date:'dd/MM/yyyy'}}</div>
+  </div>
+  <div>
+    <p class="product-left-quantity>">{{ product.leftQuantity }}</p>
+  </div>
+</div>

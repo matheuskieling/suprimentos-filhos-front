@@ -1,1 +1,21 @@
-<p>home works!</p>
+<div class="home-container">
+  <div class="header-container">
+    Header
+  </div>
+  <div class="list-container">
+    <div class="list-category">Comida</div>
+    <div *ngFor="let product of foodList">
+      <app-product [product]="product"></app-product>
+    </div>
+    <div class="list-category">Remedio</div>
+    <div *ngFor="let product of medList">
+      <app-product [product]="product"></app-product>
+    </div>
+  </div>
+  <footer class="footer-container">
+    <div class="footer-nav__item">
+      <img width="20px" height="20px" src="assets/imgs/dog-paw.svg">
+      <div>Produtos</div>
+    </div>
+  </footer>
+</div>
